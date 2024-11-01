@@ -1,0 +1,38 @@
+$blue: #131f8a;
+$pale-blue: #c5d9e4;
+
+$font-md: "LoewNextMedium";
+$font-bold: "LoewNextBold";
+$font-ex-bold: "LoewNextExtraBold";
+
+// Font Styles
+
+@font-face {
+  font-family: "LoewNextMedium";
+  src: url("./assets/font/LoewNextArabic-Medium.woff2") format("woff2"),
+    url("./assets/font/LoewNextArabic-Medium.woff") format("woff")
+    url("./assets/font/LoewNextArabic-Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LoewNextBold";
+  src: url("./assets/font/LoewNextArabic-Bold.woff2") format("woff2"),
+    url("./assets/font/LoewNextArabic-Bold.woff") format("woff"),
+    url("./assets/font/LoewNextArabic-Bold.otf") format("otf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LoewNextExtraBold";
+  src: url("./assets/font/LoewNextArabic-ExtraBold.woff2") format("woff2"),
+    url("./assets/font/LoewNextArabic-ExtraBold.woff") format("woff"),
+    url("./assets/font/LoewNextArabic-ExtraBold.otf") format("otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

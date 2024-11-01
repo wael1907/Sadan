@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.4" height="26.4" viewBox="0 0 26.4 26.4">
+  <g id="Icon_ICON_feather_arrow-down-circle_SIZE_LARGE_STYLE_STYLE1_" data-name="Icon [ICON=feather/arrow-down-circle][SIZE=LARGE][STYLE=STYLE1]" transform="translate(1.2 1.2)">
+    <rect id="Area_ICON:feather_arrow-down-circle_SIZE:LARGE_STYLE:STYLE1_" data-name="Area [ICON:feather/arrow-down-circle][SIZE:LARGE][STYLE:STYLE1]" width="24" height="24" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon" transform="translate(-1 -1)">
+      <circle id="a93b3c74-afb5-43c7-b136-504d4a9f5858" cx="12" cy="12" r="12" transform="translate(1 1)" fill="none" stroke="#131f8a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/>
+      <path id="cdadf8dd-8f33-4b1c-91b4-107678b2bedb" d="M9.6,14.4l4.8,4.8,4.8-4.8" transform="translate(-1.4 -1.4)" fill="none" stroke="#131f8a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/>
+      <line id="fbea37e2-8122-4d72-8836-aa0812d4e3e3" y2="9.6" transform="translate(13 8.2)" fill="none" stroke="#131f8a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4"/>
+    </g>
+  </g>
+</svg>

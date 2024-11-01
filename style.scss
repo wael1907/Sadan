@@ -1,0 +1,431 @@
+@import "./variables";
+html {
+  font-size: 16px;
+}
+
+* {
+  font-family: $font-md;
+  direction: rtl;
+}
+a {
+  text-decoration: none !important;
+}
+
+// My Styles
+.blue-btn {
+  background-color: $blue;
+  text-align: center;
+  padding: 0.725rem;
+  border-radius: 24px;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.common-heading {
+  font-size: 2.625rem;
+  color: $blue;
+  font-weight: 600;
+  letter-spacing: 1.26px;
+}
+
+.common-paragraph {
+  font-size: 1.125rem;
+  letter-spacing: 0.13px;
+  line-height: 1.875rem;
+}
+
+.flex-center-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list-group {
+  padding-right: 0;
+  li {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+}
+
+.main-sadan {
+  .hero {
+    position: relative;
+    height: 80vh;
+    background-image: url("./assets/images/hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    padding: 2.5rem 0;
+    position: relative;
+    .brand-logo {
+      img {
+        height: 3.75rem;
+        width: 9.75rem;
+      }
+    }
+    button {
+      width: 9.063rem;
+    }
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 2.5rem;
+    right: 9.625rem;
+    a {
+      color: $blue;
+      font-weight: 600;
+      img {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
+
+.about-sadan {
+  padding: 7.375rem 0 3.5rem;
+  h2 {
+    margin-bottom: 3rem;
+    line-height: 1rem;
+  }
+  p {
+    width: 31rem;
+  }
+  .about--sadan-photo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 33.125rem;
+    img {
+      width: 47%;
+      height: 12.5rem;
+      &.full {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.message-sadan {
+  padding: 4.063rem 1rem;
+  background-color: rgb(197, 217, 228, 24%);
+  .content {
+    .message--sadan-img {
+      margin-bottom: 2.813rem;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    p {
+      max-width: 37rem;
+      text-align: center;
+    }
+  }
+}
+
+.vision-sadan {
+  padding: 2.75rem 0 1.813rem;
+
+  .vision--sadan-img {
+    img {
+      width: 33rem;
+      height: 31.75rem;
+    }
+  }
+  .info {
+    padding-right: 3.5rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+    p {
+      max-width: 31rem;
+    }
+  }
+}
+
+.contact-sadan {
+  padding: 3.938rem 1rem 3.125rem;
+  background-color: rgb(197, 217, 228, 23%);
+
+  .content {
+    .contact-icon {
+      margin-bottom: 1.5rem;
+
+      img {
+        width: 5.875rem;
+        height: auto;
+      }
+    }
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  form {
+    max-width: 37.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+
+    input,
+    textarea {
+      width: 48%;
+      padding: 0 1rem;
+      border-radius: 16px;
+      outline: none;
+      border: none;
+      resize: none;
+      &::placeholder {
+        color: black;
+      }
+    }
+
+    input {
+      height: 3rem;
+    }
+
+    .message-box {
+      padding: 1rem;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+
+    .send-btn {
+      button {
+        width: 10.625rem;
+      }
+    }
+  }
+}
+
+footer {
+  .upper {
+    padding: 3.8rem 0;
+    background-image: url("./assets/images/footer-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .upper-logos {
+      position: relative;
+      img {
+        margin-bottom: 1rem;
+        display: block;
+      }
+    }
+
+    .upper-info {
+      padding-left: 0.325rem;
+      .list-group {
+        .list-group-item {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .list-group-item,
+      .inf p,
+      .inf a {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #000;
+      }
+
+      .inf {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        img {
+          margin-left: 0.9375rem;
+        }
+      }
+    }
+  }
+
+  .under {
+    background-color: $blue;
+    color: white;
+    padding: 1.11rem 0;
+
+    .right-links a {
+      color: white !important;
+
+      &:first-of-type {
+        margin-left: 2rem;
+      }
+    }
+
+    .left-sen,
+    .right-links a {
+      font-size: 0.8125rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .blue-btn {
+    font-size: 0.875rem;
+    padding: 0.5rem;
+  }
+
+  .common-heading,
+  .common-paragraph {
+    text-align: center;
+  }
+
+  .common-heading {
+    font-size: 1.5rem;
+  }
+  .common-paragraph {
+    font-size: 0.875rem;
+  }
+  
+  .hero {
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #ffffffa6;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  .main-sadan {
+    header {
+      padding: 1rem 0;
+
+      .brand-logo {
+        img {
+          width: 7rem;
+        }
+      }
+
+      button {
+        width: 7.063rem;
+      }
+    }
+    .scroll-down {
+      right: 25%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .about-sadan {
+    padding: 3.5rem 0.5rem;
+    h2 {
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 1.5rem;
+      width: auto;
+    }
+    .about--sadan-photo {
+      width: 100%;
+      gap: 1rem;
+      img {
+        width: 48.3%;
+        &.full {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .message-sadan {
+    padding: 2rem 1rem;
+  }
+
+  .vision-sadan {
+    .vision--sadan-img {
+      margin-bottom: 2rem;
+      img {
+        width: 100% !important;
+      }
+    }
+    .info {
+      padding-right: 0;
+      p {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .contact-sadan {
+    form {
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    .upper {
+      padding: 3rem 0;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(255, 255, 255, 0.8);
+        // z-index: -1;
+      }
+      .flex-between {
+        flex-direction: column;
+        .upper-logos {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 2rem;
+        }
+      }
+      .list-group {
+        .list-group-item:first-of-type {
+          text-align: center;
+        }
+      }
+    }
+
+    .under {
+      .flex-between {
+        justify-content: center;
+        .right-links {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1150px) {
+  .about-sadan .about--sadan-photo {
+    width: 28rem;
+    margin-right: 2.5rem;
+  }
+  .vision-sadan .vision--sadan-img {
+    img {
+      width: 100% !important;
+    }
+  }
+}
